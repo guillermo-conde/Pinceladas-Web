@@ -126,6 +126,7 @@ header {
 .masVendido {
 	width: 100%;
 	padding: 2%;
+	justify-content: space-between;
 }
 .masVendido h2 {
 	color: #FEB260;
@@ -138,6 +139,12 @@ header {
 /*Terminan los mas vendidos*/
 
 /*Inician detalles de la empresa*/
+.conocenos {
+	background: #FEB260;
+	text-align: center;
+	overflow: hidden;
+	padding: 2%;
+}
 .contacto {
 	float:left;
 	width: 49%;
@@ -145,21 +152,51 @@ header {
 
 .ubicacion {
 	float:left;
-	width: 49%;
-}
-
-.puntosEntrega {
-	float:left;
-	width: 49%;
+	align-content: center;
+	padding: 1%;
+	margin: 0.5%;
 }
 /*Terminan detalles de la empresa*/
 
-/*Inicia footer*/
-footer {
-	background: gray;
+/*Comienzan puntos de entrega*/
+.puntosEntrega {
+	float:left;
+	width: 100%;
+}
+.puntosEntrega h2 {
+	text-align: center;
+	color: #FEB260;
 }
 
-footer p {
+.info {
+	width: 49%;
+	float: left;
+}
+
+.info p {
+	color: #FEB260;
+}
+
+.ubicacionPuntoEnt {
+	float:left;
+	position: relative;
+	border: solid 3px gray;
+	padding: 0px;
+	margin: 0.5%;
+}
+
+
+/*Terminan puntos de entrega*/
+
+/*Inicia footer*/
+footer {
+	width: 100%;
+	background: gray;
+	overflow: hidden;
+	padding: 1%;
+}
+
+.copyright, .avisoPriv {
 	float: left;
 	width: 49%;
 }

@@ -68,32 +68,33 @@
 		</div>
 		<div class="conocenos">
 			<div>
+				<h3 class="subtitulo">Contacto</h3>
 				<div class="contacto">
-					<h3 class="subtitulo">Contacto</h3>
 					<p><b>Teléfono: </b>(Colocar telefono)</p>
 					<p><b>Mail: </b>(Colocar mail)</p>
 					<p><b>Horario de atencion: </b>(Colocar horario)</p>
 				</div>
 				<div class="ubicacion">
-					<p>(Espacio para la ubicacion de google maps)</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.5885714149697!2d-98.24378965953261!3d19.223693639373995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzIzLjciTiA5OMKwMTQnMzYuNyJX!5e0!3m2!1ses!2smx!4v1603685558934!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:solid 20% gray;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
-			
 		</div>
 		<div>
 			<div class="puntosEntrega">
 				<h2 class="subtitulo">Entregamos en:</h2>
-				<p><b>Direccion</b></p>
-				<p><b>Horario</b></p>
-			</div>
-			<div class="ubicacion">
-				(Espacio para la ubicacion de google maps)
+				<div class="info">
+					<p><b>Direccion</b></p>
+					<p><b>Horario</b></p>
+				</div>
+				<div class="ubicacionPuntoEnt">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.5885714149697!2d-98.24378965953261!3d19.223693639373995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzIzLjciTiA5OMKwMTQnMzYuNyJX!5e0!3m2!1ses!2smx!4v1603685558934!5m2!1ses!2smx" width="400" height="300" frameborder="true" style="" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
-		<div><p><b>Pinceladas Cerámica.</b> Todos los derechos reservados.</p></div>
-		<div><p>Consulta <a href="">aquí</a> nuestro aviso de privacidad.</p></div>
+		<div class="copyright"><p><b>Pinceladas Cerámica.</b> Todos los derechos reservados.</p></div>
+		<div class="avisoPriv"><p>Consulta <a href="">aquí</a> nuestro aviso de privacidad.</p></div>
 	</footer>
 </body>
   
