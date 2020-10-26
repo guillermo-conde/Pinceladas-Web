@@ -99,30 +99,45 @@ header {
 /*Inicia bienvenida*/
 .bienvenida {
 	width: 100%;
+	padding: 2%;
+	background: #FEB260;
+	overflow: hidden;
 }
 
-h2, h3,p , b{
-	color: #FEB260;
+.bienvenida h2, h3, p {
+	color: #fff;
 	text-align: center;
 }
 
+.mision {
+	float:left;
+	width: 49%;
+	margin: 3% 0%;
+}
+
+.vision {
+	float:left;
+	width: 49%;
+	margin: 3% 0%;
+}
+/*Termina la bienvenida*/
+
 /*Inician los mas vendidos*/
+.masVendido {
+	width: 100%;
+	padding: 2%;
+}
+.masVendido h2 {
+	color: #FEB260;
+	text-align: center;
+	margin: 2%;
+}
 .img {
 	width: 33%;
 }
 /*Terminan los mas vendidos*/
 
 /*Inician detalles de la empresa*/
-.mision {
-	float:left;
-	width: 49%;
-}
-
-.vision {
-	float:left;
-	width: 49%;
-}
-
 .contacto {
 	float:left;
 	width: 49%;
@@ -144,9 +159,9 @@ footer {
 	background: gray;
 }
 
-/*footer p {
+footer p {
 	float: left;
 	width: 49%;
-}*/
+}
 
 /*Termina footer*/

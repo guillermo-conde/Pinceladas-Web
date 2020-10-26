@@ -51,15 +51,6 @@
 		<div class="bienvenida">
 			<h2>Bienvenido a Pinceladas</h2>
 			<p>(Colocar eslogan)</p>
-		</div>
-		<div class="masVendido">
-			<h2>Lo mas vendido</h2>
-			<img src="assets/img/1.jpg" alt="" class="img">
-			<img src="assets/img/2.jpg" alt="" class="img">
-			<img src="assets/img/3.jpg" alt="" class="img">
-		</div>
-		<div class="conocenos">
-			<h2 class="subtitulo">Conócenos</h2>
 			<div class="mision">
 				<h3 class="subtitulo">Mision</h3>
 				<p>(Mision)</p>
@@ -68,6 +59,14 @@
 				<h3 class="subtitulo">Vision</h3>
 				<p>(Vision)</p>
 			</div>
+		</div>
+		<div class="masVendido">
+			<h2>Lo mas vendido</h2>
+			<img src="assets/img/1.jpg" alt="" class="img">
+			<img src="assets/img/2.jpg" alt="" class="img">
+			<img src="assets/img/3.jpg" alt="" class="img">
+		</div>
+		<div class="conocenos">
 			<div>
 				<div class="contacto">
 					<h3 class="subtitulo">Contacto</h3>
