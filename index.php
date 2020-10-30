@@ -50,14 +50,16 @@
 	<section>
 		<div class="bienvenida">
 			<h2>Bienvenido a Pinceladas</h2>
-			<p>(Colocar eslogan)</p>
+			<p>No tienen jaja</p>
 			<div class="mision">
 				<h3 class="subtitulo">Mision</h3>
-				<p>(Mision)</p>
+				<p>Pinceladas busca ofrecer productos de calidad y con precios accesibles, con una ampial gama de piezas de cerámica 
+				dando color y armonía a tu casa con decoraciones únicas y hermosas, ademas de piezas funcionales y duraderas</p>
 			</div>
 			<div class="vision">
 				<h3 class="subtitulo">Vision</h3>
-				<p>(Vision)</p>
+				<p>Nuestra vision consiste en ser una empresa responsable, comprometida con nuestros clientes y trabajadores para mejorar
+				continuamente</p>
 			</div>
 		</div>
 		<div class="masVendido">
@@ -70,9 +72,9 @@
 			<div>
 				<h3 class="subtitulo">Contacto</h3>
 				<div class="contacto">
-					<p><b>Teléfono: </b>(Colocar telefono)</p>
-					<p><b>Mail: </b>(Colocar mail)</p>
-					<p><b>Horario de atencion: </b>(Colocar horario)</p>
+					<p><b>Teléfono: </b>221 146 51 57</p>
+					<p><b>Mail: </b>americapais135@gmail.com</p>
+					<p><b>Horario de atencion: </b>9:00am - 6:00pm</p>
 				</div>
 				<div class="ubicacion">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.5885714149697!2d-98.24378965953261!3d19.223693639373995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzIzLjciTiA5OMKwMTQnMzYuNyJX!5e0!3m2!1ses!2smx!4v1603685558934!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:solid 20% gray;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
