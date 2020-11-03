@@ -25,13 +25,14 @@ header {
 .tituloPagina {
 	width: 60%;
 	margin: auto 4%;
+	opacity: 0;
+	transition: opacity 1s ease-in;
 }
 
 .menuPrincipal {
 	padding: 0px;
 	width: 40%;
 	margin: auto;
-	;
 }
 
 .itemPrinc a {
@@ -43,6 +44,27 @@ header {
 	float: left;
 	list-style: none;
 	margin: 3% 4%;
+	
+}
+
+.efectoTitulo{
+	opacity: 1;
+}
+.efecto1{
+	transform: translateY(-200%);
+	transition: transform 1s ease-in;
+}
+.efecto2{
+	transform: translateY(-200%);
+	transition: transform 1s ease-in;
+}
+.efecto3{
+	transform: translateY(-200%);
+	transition: transform 1s ease-in;
+}
+
+.mostrarMenu{
+	transform: translateY(0%);
 }
 
 .itemPrinc:hover a {
@@ -106,19 +128,30 @@ header {
 
 .bienvenida h2, h3, p {
 	color: #fff;
+	text-align: justify;
+	font-size: 150%;
+}
+
+.bienvenida h2 {
+	font-size: 300%;
+	text-align: center;
+}
+
+.bienvenida h3 {
+	font-size: 200%;
 	text-align: center;
 }
 
 .mision {
 	float:left;
-	width: 49%;
-	margin: 3% 0%;
+	width: 44%;
+	margin: 3% 3%;
 }
 
 .vision {
 	float:left;
-	width: 49%;
-	margin: 3% 0%;
+	width: 44%;
+	margin: 3% 3%;
 }
 /*Termina la bienvenida*/
 
@@ -130,8 +163,9 @@ header {
 }
 .masVendido h2 {
 	color: #FEB260;
+	font-size: 300%;
 	text-align: center;
-	margin: 2%;
+	margin: 1%;
 }
 .img {
 	width: 33%;
@@ -145,9 +179,21 @@ header {
 	overflow: hidden;
 	padding: 2%;
 }
+
+.conocenos h2{
+	font-size: 300%;
+	color: #fff;
+}
+
 .contacto {
-	float:left;
+	padding: 5%;
+	float: left;
 	width: 49%;
+}
+
+.contacto p{
+	float: right;
+	font-size: 150%;
 }
 
 .ubicacion {
@@ -160,26 +206,32 @@ header {
 
 /*Comienzan puntos de entrega*/
 .puntosEntrega {
-	float:left;
 	width: 100%;
 }
 .puntosEntrega h2 {
 	text-align: center;
 	color: #FEB260;
+	font-size: 300%;
+}
+
+.contenedorPEnt {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .info {
-	width: 49%;
-	float: left;
+	width: 100%;
 }
 
 .info p {
 	color: #FEB260;
+	font-size: 150%;
+	text-align: center;
 }
 
 .ubicacionPuntoEnt {
-	float:left;
-	position: relative;
 	border: solid 3px gray;
 	padding: 0px;
 	margin: 0.5%;
@@ -199,6 +251,16 @@ footer {
 .copyright, .avisoPriv {
 	float: left;
 	width: 49%;
+	font-size: 60%;
+	text-align: center;
 }
 
+.copyright p, .avisoPriv p{
+	font-size: 150%;
+	text-align: center;
+}
+
+
 /*Termina footer*/
+
+/*Inician estilos de titulos y parrafo*/
