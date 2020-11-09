@@ -122,7 +122,7 @@
     					<label for="id">Id del producto</label><br>
     					<input type="text" id="act_id" readonly="true" name="id"><br>
     					<label for="nombre" >Nombre del producto</label><br>
-    					<input type="text" id="act_nombre" readonly="true" name="nombre"><br>
+    					<input type="text" id="act_nombre" name="nombre"><br>
     					<label for="precio">Precio del producto</label><br>
     					<input type="number" id="act_precio" name="precio" step="any" min="0"><br>
                         <label for="ventas">Ventas del producto</label><br>

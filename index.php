@@ -104,7 +104,7 @@
 		</div>
 	</section>
 	<a href=""><i class="fab fa-facebook-messenger fa-3x"></i></a>
-		<a href="https://wa.me/5212461375471?text=Me%20interesa%20in%20el%20auto%20que%20vendes" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+	<a href="https://wa.me/5212461375471?text=Me%20interesa%20in%20el%20auto%20que%20vendes" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
 	<footer>
 		<div class="copyright"><p><b>Pinceladas Cerámica.</b> Todos los derechos reservados.</p></div>
 		<div class="avisoPriv"><p>Consulta <a href="">aquí</a> nuestro aviso de privacidad.</p></div>

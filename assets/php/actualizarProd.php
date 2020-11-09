@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD']){ //Validacion que se reciban datos.
 
 							//Cargando la informacion en la base de datos.
 							include("conexion.php"); //Archivo que establece la conexion.
+							
 							mysqli_query($conexion, "UPDATE productos SET nombre='$nombre', descripcion='$descripcion', precio='$precio', ventas='$ventas', categoria='$categoria', subcategoria='$subcategoria' WHERE id='$id'");//Registro de las variables en la base de datos.
 						}else {
 							include('obteniendoEnumCateg.php');
@@ -47,10 +48,10 @@ if ($_SERVER['REQUEST_METHOD']){ //Validacion que se reciban datos.
 							}
 							//Cargando la informacion en la base de datos.
 							include("conexion.php"); //Archivo que establece la conexion.
+
 							mysqli_query($conexion, "UPDATE productos SET nombre='$nombre', descripcion='$descripcion', precio='$precio', ventas='$ventas', categoria='$categoria', subcategoria=NULL WHERE id='$id'");//Registro de las variables en la base de datos.
 						}
 
-						
 						echo'<script type="text/javascript">
 						   alert("Producto actualizado correctamente.");
 						   window.location.href="../../panel.php"; //Para regresar al origen
