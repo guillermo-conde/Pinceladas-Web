@@ -1,7 +1,7 @@
 <?php 
 //Valores para la conexion de la base  de datos
 $host = "localhost";
-$bd = "pagina";
+$bd = "pinceladas";
 $usuario = "root";
 $contraseña = "";
 

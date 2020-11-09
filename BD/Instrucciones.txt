@@ -1,0 +1,8 @@
+Crea una BD llamada "pinceladas", y luego importa el respaldo que esta en esta carpeta, con eso bastara para que puedas hacer la conexion de la pagina con la BD.
+
+Si tu acceso a MySQL tiene contraseña tienes que configurarla en el archivo php:
+1._ Dirigete a assets/php
+2._ Abre el archivo "conexion.php" con tu editor de codigo
+3._ En la linea 6 esta el parametro de la contraseña, dentro de las comillas tendras que ingresar la contraseña con la que ingresas a Mysql. 
+
+Con esto deberia bastar para que puedas establecere la conexion.
