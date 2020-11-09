@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-11-2020 a las 21:12:48
+-- Tiempo de generación: 09-11-2020 a las 23:19:02
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.2
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pagina`
+-- Base de datos: `pinceladas`
 --
 
 -- --------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE `productos` (
   `descripcion` varchar(100) NOT NULL,
   `precio` decimal(7,2) NOT NULL,
   `ventas` int(11) NOT NULL,
-  `categoria` enum('Alcancias','Alhajeros','Cocina','Hogar','Fechas especiales') NOT NULL,
+  `categoria` enum('Alcancías','Floreros','Maceteros','Alhajeros','Cocina','Hogar','Recuerdos','Tlaxcala','Fechas Especiales') NOT NULL,
   `subcategoria` enum('Dia de muertos','Fiestas Patrias','Navidad','San Valentin') DEFAULT NULL,
   `ruta` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
