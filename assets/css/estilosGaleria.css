@@ -28,14 +28,18 @@ header {
 .tituloPagina {
 	width: 60%;
 	margin: auto 4%;
-	/*opacity: 0;*/
-	/*transition: opacity 1s ease-in;*/
+	/*opacity: 0;
+	transition: opacity 1s ease-in;*/
 }
 
 .menuPrincipal {
-	padding: 0px;
+	padding-right: 7%;
 	width: 40%;
-	margin: auto;
+}
+
+.contMenuDesp, 
+.menuDesplegable{
+	display: none;
 }
 
 .itemPrinc a {
@@ -44,7 +48,7 @@ header {
 }
 
 .itemPrinc {
-	float: left;
+	float: right;
 	list-style: none;
 	margin: 3% 4%;
 	
@@ -165,7 +169,88 @@ header {
 .fa-facebook-messenger{
 	position: fixed;
 	z-index: 1000;
-	bottom: 7%;
+	bottom: 9%;
 	right: 1%;
 	color: #0084ff;
+}
+
+@media screen and (max-width: 686px) {
+	.menuPrincipal{
+		display: none;
+	}
+	.tituloPagina {
+	width: 90%;
+	margin: auto 4%;
+	/*opacity: 0;
+	transition: opacity 1s ease-in;*/
+	}
+	.menuDesplegable{
+		display: flex;
+		width: 10%;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 2%;
+		cursor: pointer;
+	}
+	.contMenuDesp{
+		display: block;
+		position: fixed;
+		top: 7%;
+		right: 0%;
+		background: gray;
+		width: 30%;
+		transform: translateX(200%);
+		transition: transform 0.4s;
+	}
+	.despPrinc a{
+		display: flex;
+		color: #fff;
+		width: 100%;
+		margin-left: 7%;
+		justify-content: flex-start;
+	}
+	.despSegun a{
+		display: flex;
+		color: #fff;
+		width: 100%;
+		margin-left: 20%;
+	}
+	.desplegar{
+		transform: translateX(0%);
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 550px) {
+	.contMenuDesp{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.contMenuDesp{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.contMenuDesp{
+		width: 60%;
+		top: 5%;
+	}
+	.contMenuDesp .despPrinc a,
+	.contMenuDesp .despSegun a{
+		font-size: 80%;
+	}
+
+	.tituloPagina h1{
+		font-size: 110%;
+	}
+
+	.tipo{
+		font-size: 110%;
+	}
 }

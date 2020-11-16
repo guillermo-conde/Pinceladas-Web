@@ -1,7 +1,7 @@
 <?php 
 include ("conexion.php");
 
-$consulta = mysqlI_query($conexion, "SELECT COLUMN_TYPE FROM information_schema.COLUMNS WHERE table_schema = 'pagina' AND TABLE_NAME = 'productos' AND column_name = 'categoria'"); //Con esta consulta se obtienen los valores para 'enum'; Sin embargo lo devuelve en un string asi:
+$consulta = mysqlI_query($conexion, "SELECT COLUMN_TYPE FROM information_schema.COLUMNS WHERE table_schema = 'pinceladas' AND TABLE_NAME = 'productos' AND column_name = 'categoria'"); //Con esta consulta se obtienen los valores para 'enum'; Sin embargo lo devuelve en un string asi:
 
 //enum('opcion1', 'opcion2')
 

@@ -28,7 +28,7 @@ header {
 }
 
 .tituloPagina {
-	width: 60%;
+	width: 35%;
 	margin: auto 4%;
 	opacity: 0;
 	transition: opacity 1s ease-in;
@@ -36,8 +36,12 @@ header {
 
 .menuPrincipal {
 	padding: 0px;
-	width: 40%;
-	margin: auto;
+	width: 65%;
+	align-items: center;
+}
+
+.contMenuDesp, .menuDesplegable{
+	display: none;
 }
 
 .itemPrinc a {
@@ -46,7 +50,7 @@ header {
 }
 
 .itemPrinc {
-	float: left;
+	float: right;
 	list-style: none;
 	margin: 3% 4%;
 	
@@ -133,20 +137,19 @@ header {
 
 .bienvenida h2, h3, p {
 	color: #fff;
-	text-align: justify;
+	text-align: center;
 	font-size: 150%;
+	font-family: 'Kalam', cursive;
 }
 
 .bienvenida h2 {
 	font-size: 300%;
-	text-align: center;
-	font-family: 'Kalam', cursive;
+	text-align: center;	
 }
 
 .bienvenida h3 {
 	font-size: 200%;
 	text-align: center;
-	font-family: 'Kalam', cursive;
 }
 
 .mision {
@@ -166,7 +169,6 @@ header {
 .masVendido {
 	width: 100%;
 	padding: 2%;
-	justify-content: space-between;
 }
 .masVendido h2 {
 	color: #FEB260;
@@ -175,13 +177,21 @@ header {
 	margin: 1%;
 	font-family: 'Kalam', cursive;
 }
-.img {
-	width: 33%;
+.masVendido img {
+	width: 30%;
+	margin: 1%;
+}
+
+.contImg{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 /*Terminan los mas vendidos*/
 
 /*Inician detalles de la empresa*/
 .conocenos {
+	width: 100%;
 	background: #FEB260;
 	text-align: center;
 	overflow: hidden;
@@ -198,10 +208,11 @@ header {
 	padding: 5%;
 	float: left;
 	width: 49%;
+
 }
 
 .contacto p{
-	float: right;
+	text-align: right;
 	font-size: 150%;
 }
 
@@ -225,6 +236,12 @@ header {
 	align-content: center;
 	padding: 1%;
 	margin: 0.5%;
+	width: 49%;
+}
+
+.ubicacion iframe{
+	width: 100%;
+	height: 300px;
 }
 /*Terminan detalles de la empresa*/
 
@@ -242,7 +259,6 @@ header {
 .contenedorPEnt {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
@@ -257,12 +273,15 @@ header {
 }
 
 .ubicacionPuntoEnt {
+	width: 46%;
 	border: solid 3px gray;
 	padding: 0px;
-	margin: 0.5%;
+	margin: 2%;
 }
 
-
+.ubicacionPuntoEnt iframe{
+	width: 100%;
+}
 /*Terminan puntos de entrega*/
 
 /*Inicia footer*/
@@ -299,4 +318,206 @@ footer {
 	bottom: 13%;
 	right: 1%;
 	color: #0084ff;
+}
+
+@media screen and (max-width: 785px) {
+	.menuPrincipal{
+		display: none;
+	}
+
+	.menuDesplegable{
+		width: 15%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-right: 4%; 
+		cursor: pointer;
+	}
+
+	.contMenuDesp{
+		display: flex;
+		position: fixed;
+		top: 7%;
+		right: 0%;
+		background: gray;
+		width: 33%;
+		transform: translateX(200%);
+		transition: transform 0.4s;
+	}
+
+	.contMenuDesp li{
+		color: #fff;
+		width: 110%;
+		list-style: none;
+	}
+
+	.contMenuDesp a{
+		color: #fff;
+		padding-left: 2%;
+	}
+
+	.tituloPagina {
+		width: 85%;
+	}
+
+	.masVendido img {
+		width: 45%;
+		margin: 2%;
+	}
+
+	.desplegar{
+		transform: translateX(0%);
+	}
+	.conocenos .contacto{
+		width: 100%;
+		float: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.conocenos p{
+		width: 100%;
+		text-align: center;
+	}
+
+	.copyright p,
+	.avisoPriv p{
+		font-size: 150%;
+	}
+
+	.conocenos .ubicacion{
+		width: 100%;
+		height: 100%;
+	}
+
+	.contenedorPEnt{
+		flex-wrap: wrap;
+	}
+
+	.ubicacionPuntoEnt{
+		width: 100%;
+	}
+	.fa-facebook-messenger{
+		font-size: 230%;
+		bottom: 12%;
+	}
+	.fa-whatsapp{
+		font-size: 230%;
+	}
+}
+
+@media screen and (max-width: 655px) {
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.contMenuDesp{
+		width: 38%;
+	}
+
+	.copyright ,
+	.avisoPriv {
+		width: 100%;
+	}
+	.fa-facebook-messenger{
+		bottom: 14%;
+	}
+	.fa-whatsapp{
+		font-size: 230%;
+		bottom: 9%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contMenuDesp{
+		width: 50%;
+	}
+	.bienvenida h2 {
+	font-size: 200%;
+	text-align: center;	
+	}
+
+	.bienvenida h3 {
+	font-size: 150%;
+	text-align: center;
+	}
+
+	.bienvenida p,
+	.conocenos p,
+	.puntosEntrega p {
+	font-size: 130%;
+	text-align: center;
+	}
+
+	.masVendido h2,
+	.conocenos h2,
+	.puntosEntrega h2 {
+	font-size: 200%;
+	text-align: center;	
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.tituloPagina h1 {
+		font-size: 100%;
+	}
+	.bienvenida h2 {
+	font-size: 150%;
+	text-align: center;	
+	}
+
+	.bienvenida h3 {
+	font-size: 120%;
+	text-align: center;
+	}
+
+	.contMenuDesp{
+		top: 4.7%;
+		font-size: 80%;
+	}
+
+	.bienvenida p,
+	.conocenos p,
+	.puntosEntrega p {
+	font-size: 100%;
+	text-align: center;
+	}
+	.bienvenida {
+		flex-wrap: wrap;
+	}
+	.bienvenida .mision,
+	.bienvenida .vision{
+		width: 100%;
+	}
+
+	.bienvenida {
+	display: flex;
+	justify-content: center;
+	}
+
+	.masVendido h2,
+	.conocenos h2,
+	.puntosEntrega h2 {
+	font-size: 200%;
+	text-align: center;	
+	}
+}
+
+@media screen and (max-width: 550px) {
+	footer{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.copyright p,
+	.avisoPriv p{
+		font-size: 110%;
+	}
+
+	.contMenuDesp{
+		width: 70%;
+	}
 }

@@ -16,13 +16,16 @@
 					Pinceladas Cerámica
 				</h1>
 			</div>
+			<div class="menuDesplegable" onclick="desplegar()">
+				<i class="fas fa-bars desplegable"></i>
+			</div>
 			<div class="menuPrincipal">
 				<nav>
 					<ul>
-						<li class="itemPrinc efecto1"><a href="#Nosotros" >Sobre nosotros</a></li>
-						<li class="itemPrinc efecto2"><a href="" >Nuestros Productos</a>
-							<ul class="categorias">
-								<li class="itemSecun"><a href="galerias.php/?categ=Alcancias">Alcancías</a></li>
+						<li class="itemPrinc efecto1"><a href="#Contacto" >Contacto</a></li>
+						<li class="itemPrinc efecto2"><a href="#categorias" >Nuestros Productos</a>
+							<ul class="categorias" id="categorias">
+								<li class="itemSecun"><a href="galerias.php/?categ=Alcancías">Alcancías</a></li>
 								<li class="itemSecun"><a href="galerias.php/?categ=Alhajeros">Alhajeros</a></li>
 								<li class="itemSecun"><a href="galerias.php/?categ=Cocina">Cocina</a></li>
 								<li class="itemSecun"><a href="galerias.php/?categ=Hogar">Hogar</a></li>
@@ -40,7 +43,17 @@
 								</li>
 							</ul>
 						</li>
-						<li class="itemPrinc efecto3"><a href="#Contacto">Contacto</a></li>
+						<li class="itemPrinc efecto3"><a href="#Nosotros">Sobre nosotros</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="contMenuDesp">
+				<nav>
+					<ul>
+						<li class="desPrinc"><a href="#Nosotros" >Sobre nosotros</a></li>
+						<li class="desPrinc"><a href="galerias.php/?categ=Alcancías" >Todos los productos</a></li>
+						<li class="desPrinc"><a href="#mVendidos" >Productos mas vendidos</a></li>
+						<li class="desPrinc"><a href="#Contacto">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -62,12 +75,17 @@
 				continuamente</p>
 			</div>
 		</div>
-		<div class="masVendido">
+		<div class="masVendido" id="mVendidos">
 			<h2>Lo mas vendido</h2>
-			<?php include("assets/php/masVendidos.php"); ?> 
-			<?php foreach ($consulta as $key => $producto): ?> 
-				<img src="<?php echo $producto['ruta'] ?>" alt="<?php echo $producto['nombre'] ?>">
-			<?php endforeach?>
+			<div class="contImg">
+				<!-- <?php include("assets/php/masVendidos.php"); ?> 
+				<?php foreach ($consulta as $key => $producto): ?> 
+					<img src="<?php echo $producto['ruta'] ?>" alt="<?php echo $producto['nombre'] ?>">
+				<?php endforeach?> -->
+				<img src="assets/img/1.jpg" alt="">
+				<img src="assets/img/2.jpg" alt="">
+				<img src="assets/img/3.jpg" alt="">
+			</div>
 		</div>
 		<div class="conocenos" id="Contacto">
 			<div>
@@ -83,7 +101,7 @@
 					</div>
 				</div>
 				<div class="ubicacion">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.5885714149697!2d-98.24378965953261!3d19.223693639373995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzIzLjciTiA5OMKwMTQnMzYuNyJX!5e0!3m2!1ses!2smx!4v1603685558934!5m2!1ses!2smx" width="400" height="300" frameborder="0" style="border:solid 20% gray;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.5885714149697!2d-98.24378965953261!3d19.223693639373995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDEzJzIzLjciTiA5OMKwMTQnMzYuNyJX!5e0!3m2!1ses!2smx!4v1603685558934!5m2!1ses!2smx" height="300"frameborder="0" style="border:solid 20% gray;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
 		</div>
@@ -95,10 +113,10 @@
 			<div>
 			<div class="contenedorPEnt">
 				<div class="ubicacionPuntoEnt">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5265552220576!2d-98.2409034013782!3d19.2158703536033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdb41cda57b49%3A0xc744c00cf7eb2a35!2sParque%20de%20Zacatelco!5e0!3m2!1ses-419!2smx!4v1604378021288!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.5265552220576!2d-98.2409034013782!3d19.2158703536033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdb41cda57b49%3A0xc744c00cf7eb2a35!2sParque%20de%20Zacatelco!5e0!3m2!1ses-419!2smx!4v1604378021288!5m2!1ses-419!2smx" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 				<div class="ubicacionPuntoEnt">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.145182488094!2d-98.24357588526632!3d19.319505386948727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd93da401052b%3A0xd182e78ad76eedd0!2sCasa%20de%20las%20Artesan%C3%ADas%20de%20Tlaxcala!5e0!3m2!1ses-419!2smx!4v1604378062270!5m2!1ses-419!2smx" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.145182488094!2d-98.24357588526632!3d19.319505386948727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd93da401052b%3A0xd182e78ad76eedd0!2sCasa%20de%20las%20Artesan%C3%ADas%20de%20Tlaxcala!5e0!3m2!1ses-419!2smx!4v1604378062270!5m2!1ses-419!2smx" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
 		</div>
@@ -110,6 +128,7 @@
 		<div class="avisoPriv"><p>Consulta <a href="">aquí</a> nuestro aviso de privacidad.</p></div>
 	</footer>
 <script type="text/javascript" src="assets/js/efectoMenu.js"></script>
+<script type="text/javascript" src="assets/js/efectoClicks.js"></script>
 </body>
   
 </html>

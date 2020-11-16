@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link href="../assets/recursos/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/estilosGaleria.css">
+	<title>Productos</title>
+</head>
 <body>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-		<link href="../assets/recursos/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" type="text/css" href="../assets/css/estilosGaleria.css">
-		<title>Productos</title>
-	</head>
 	<header>
 		<section class="inicio">
 			<div class="tituloPagina">
@@ -19,10 +19,9 @@
 			<div class="menuPrincipal">
 				<nav>
 					<ul>
-						<li class="itemPrinc efecto1"><a href="index.php" >Inicio</a></li>
 						<li class="itemPrinc efecto2"><a href="" >Otras Categorias</a>
 							<ul class="categorias">
-								<li class="itemSecun"><a href="../galerias.php/?categ=Alcancias">Alcancías</a></li>
+								<li class="itemSecun"><a href="../galerias.php/?categ=Alcancías">Alcancías</a></li>
 								<li class="itemSecun"><a href="../galerias.php/?categ=Alhajeros">Alhajeros</a></li>
 								<li class="itemSecun"><a href="../galerias.php/?categ=Cocina">Cocina</a></li>
 								<li class="itemSecun"><a href="../galerias.php/?categ=Hogar">Hogar</a></li>
@@ -40,6 +39,30 @@
 								</li>
 							</ul>
 						</li>
+						<li class="itemPrinc efecto1"><a href="../index.php" >Inicio</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="menuDesplegable" onclick="desplegar()">
+				<i class="fas fa-bars desplegable"></i>
+			</div>
+			<div class="contMenuDesp">
+				<nav>
+					<ul>
+						<li class="despPrinc efecto1"><a href="../index.php">Inicio</a></li>
+						<li class="despPrinc"><a>Otras Categorias</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Alcancías">Alcancías</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Alhajeros">Alhajeros</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Cocina">Cocina</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Hogar">Hogar</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Floreros">Floreros</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Maceteros">Maceteros</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Recuerdos">Recuerdos</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Tlaxcala">Tlaxcala</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Fechasespeciales&subcateg=Dia de muertos">Día de muertos</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Fechasespeciales&subcateg=Fiestas Patrias">Fiestas patrias</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Fechasespeciales&subcateg=Navidad">Navidad</a></li>
+						<li class="despSegun"><a href="../galerias.php/?categ=Fechasespeciales&subcateg=San Valentin">San Valentin</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -79,7 +102,8 @@
 	</section>
 	<a href=""><i class="fab fa-facebook-messenger fa-3x"></i></a>
 	<a href="https://wa.me/5212461375471?text=Me%20interesa%20in%20el%20auto%20que%20vendes" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
-	
+
+
 	<script>
 		const imagen = document.querySelectorAll('.imgGaleria');
 		const lightbox = document.querySelector('.lightbox');
@@ -109,6 +133,12 @@
 			lightbox.style.transform = 'scale(0)';
 			contImgLi.style.transform = 'scale(0)';
 		})
+	</script>
+	<script>
+		function desplegar(){
+			const hamburguesa = document.querySelector('.contMenuDesp');
+			hamburguesa.classList.toggle('desplegar');
+		}
 	</script>
 </body>
 </html>
