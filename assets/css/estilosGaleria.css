@@ -152,11 +152,14 @@ header {
 }
 
 .lightbox .contImg .info{
+	width: 100%;
+	padding-left: 2%;
 	background: #FEB260;
 	position: absolute;
 	bottom: -0.5%;
 	color: #fff;
 	font-family: 'Kalam', cursive;
+	font-size: 130%;
 }
 
 /*Inician estilos de chat*/
@@ -172,6 +175,12 @@ header {
 	bottom: 9%;
 	right: 1%;
 	color: #0084ff;
+}
+
+@media screen and (max-width: 1200px) {
+	.lightbox .contImg {
+	width: 100%;
+	}
 }
 
 @media screen and (max-width: 686px) {
@@ -217,6 +226,14 @@ header {
 	}
 	.desplegar{
 		transform: translateX(0%);
+	}
+	.lightbox .contImg {
+	width: 55%;
+	}
+
+	.lightbox .contImg .info p{
+	font-size: 80%;
+	text-align: left;
 	}
 }
 

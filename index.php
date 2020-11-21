@@ -77,14 +77,21 @@
 		</div>
 		<div class="masVendido" id="mVendidos">
 			<h2>Lo mas vendido</h2>
+			<div class="galeria">
+				<?php include("assets/php/masVendidos.php"); ?> 
+				<?php foreach ($consulta as $key => $foto): ?> 
+					<img src="<?php echo $foto['ruta'] ?>" alt="<?php echo $foto['nombre']?>" name="<?php echo $foto['descripcion']?>" id="<?php echo 'Precio: $'.$foto['precio'].' MXN';?>" class="imgGaleria">
+				<?php endforeach?> 
+			</div>
+		</div>
+		<div class="lightbox">
 			<div class="contImg">
-				<!-- <?php include("assets/php/masVendidos.php"); ?> 
-				<?php foreach ($consulta as $key => $producto): ?> 
-					<img src="<?php echo $producto['ruta'] ?>" alt="<?php echo $producto['nombre'] ?>">
-				<?php endforeach?> -->
-				<img src="assets/img/1.jpg" alt="">
-				<img src="assets/img/2.jpg" alt="">
-				<img src="assets/img/3.jpg" alt="">
+				<img class="imgLightbox" src="" alt="">
+				<div class="info">
+					<p class="titFoto"><b></b></p>
+					<p class="descFoto"></p>
+					<p class="precFoto"><b></b></p>
+				</div>
 			</div>
 		</div>
 		<div class="conocenos" id="Contacto">
@@ -122,13 +129,14 @@
 		</div>
 	</section>
 	<a href=""><i class="fab fa-facebook-messenger fa-3x"></i></a>
-	<a href="https://wa.me/5212461375471?text=Me%20interesa%20in%20el%20auto%20que%20vendes" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+	<a href="https://wa.me/5212461375471?text=Hola%20me%20comunico%20desde%20el%20Pinceladas.com%20" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
 	<footer>
 		<div class="copyright"><p><b>Pinceladas Cerámica.</b> Todos los derechos reservados.</p></div>
 		<div class="avisoPriv"><p>Consulta <a href="">aquí</a> nuestro aviso de privacidad.</p></div>
 	</footer>
 <script type="text/javascript" src="assets/js/efectoMenu.js"></script>
 <script type="text/javascript" src="assets/js/efectoClicks.js"></script>
+<script type="text/javascript" src="assets/js/efectoLightbox.js"></script>
 </body>
   
 </html>
